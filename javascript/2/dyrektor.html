@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8" />
+    <script type="text/javascript">
+
+    function wypisz()
+    {
+        var napis = "";
+        var licznik = 5;
+        for(i=1; i<=licznik; i++)
+        {
+            napis = "";
+            for (j = 1; j <= i; j++) {
+                napis = napis + "*";
+            }
+            for (j = i + 1; j <= licznik; j++) {
+                napis = napis + j;
+            }
+            document.writeln(napis + "<br />");
+        }
+    }
+
+    </script>
+</head>
+
+<body onload="wypisz()">
+
+</body>
+
+</html>
